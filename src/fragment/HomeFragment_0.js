@@ -1,6 +1,6 @@
 import Fragment from "../../core/frame/view/group/Fragment";
 
-import html from "../html/fragment/home_fragment_0.html"
+import html from "../html/fragment/home/home_fragment_0.html"
 import {Adapter} from "../../core/frame/view/group/RecycleView";
 
 export default class HomeFragment_0 extends Fragment{
