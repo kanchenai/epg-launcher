@@ -12,6 +12,7 @@ export default class HomeFragment_0 extends Fragment{
     }
 
     initView(){
+        this.first_big = this.findViewById("first_big");
         this.like = this.findViewById("like");
         this.like.adapter = new LikeAdapter();
 
@@ -41,6 +42,14 @@ export default class HomeFragment_0 extends Fragment{
     }
 
     onStop() {
+    }
+
+    onClickListener(view){
+        switch (view.id){
+            case "back_top":
+                this.first_big.requestFocus();
+                break;
+        }
     }
 }
 

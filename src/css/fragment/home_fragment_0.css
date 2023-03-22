@@ -128,3 +128,55 @@
     width: 1136px;
     height: 320px;
 }
+
+.r_176x232,
+.r_176x232 .item{
+    width: 214px;
+    height: 270px;
+}
+
+.r_176x232 .focus,
+.r_176x232 .focus img{
+    width: 214px;
+    height: 270px;
+}
+
+.r_176x232 .pic,
+.r_176x232 .pic img{
+    width: 176px;
+    height: 232px;
+}
+
+.title{
+    width: 500px;
+    height: 22px;
+    left: 72px;
+    white-space: nowrap;
+    font-size: 22px;
+    color: #454545;
+    line-height: 22px;
+}
+
+.r_368x72 .item{
+    width: 378px;
+    height: 81px;
+}
+
+.r_368x72 .pic{
+    left: 5px;
+    top: 0px;
+}
+
+.r_368x72 .pic img{
+    width: 368px;
+    height: 72px;
+}
+
+.r_368x72 .focus img{
+    width: 378px;
+    height: 81px;
+}
+
+.r_368x72 .item_focus .pic{
+    display: none;
+}
