@@ -1,191 +1,95 @@
 <template>
-    <div class="horizontal_scroll_0_0" view-type="view-group">
-        <div class="r_565x316" style="left: 44px;top:0px;">
-            <view-item class="item" view-type="view-item" view-id="small_video">
-                <div class="focus"><img></div>
-                <div class="pic"><img view-id="small_view_pic"></div>
-                <div>
-                    <div class="txt" style="top: 266px;" view-type="view-text" view-id="text_0">这是一个跑马灯-加长加长加长加加长加长加加长加长加加长加长加加长加加长加长加加长加长加加长加长加长加长加长加长加长加长加长</div>
-                    <div class="txt" view-type="view-text" view-id="text_1">这是另一个个跑马灯-加长加长加长加长加长加长加长加长</div>
-                </div>
-            </view-item>
-        </div>
-
-        <div class="r_271x316" style="left: 629px;top:0px;">
-            <div class="item" view-type="view-item">
-                <div class="focus"><img></div>
+    <group style="width: 1280px;height: 520px;overflow: hidden;" id="first_screen">
+        <div class="r_560x232" style="left: 53px;top:2px;">
+            <item class="item">
+                <div class="focus"><img src="../../images/focus/560x232.png"></div>
                 <div class="pic"><img></div>
-            </div>
+            </item>
         </div>
+        <group style="top:249px;left: 53px;width: 598px;height: 270px;">
+            <div class="r_176x232">
+                <item class="item">
+                    <div class="focus"><img src="../../images/focus/176x232.png"></div>
+                    <div class="pic"><img></div>
+                </item>
+            </div>
 
-        <div class="r_271x316" style="left: 920px;top:0px;">
-            <div class="item" view-type="view-item">
-                <div class="focus"><img></div>
-                <div class="pic"><img></div>
+            <div class="r_176x232" style="left: 193px;">
+                <item class="item">
+                    <div class="focus"><img src="../../images/focus/176x232.png"></div>
+                    <div class="pic"><img></div>
+                </item>
             </div>
-        </div>
 
-        <div class="r_271x152" style="left: 44px;top:336px;">
-            <div class="item" view-type="view-item">
-                <div class="focus"><img></div>
-                <div class="pic"><img></div>
+            <div class="r_176x232" style="left: 384px;">
+                <item class="item">
+                    <div class="focus"><img src="../../images/focus/176x232.png"></div>
+                    <div class="pic"><img></div>
+                </item>
             </div>
+        </group>
+        <div style="left: 648px;top: 21px;"><img width="369" height="480" id="big_pic"></div>
+        <div style="width:191px;height:47px;left: 1016px;top:21px;color:#f98700;line-height: 47px;font-size: 28px;background: #454545">
+            大家都在看
         </div>
+        <recycle class="r_191x54" style="height:433px;left: 1016px;top:68px;overflow: hidden;" id="like">
+            <item class="item">
+                <div class="focus"></div>
+                <div class="pic"></div>
+                <text class="text" id="text"></text>
+                <div class="info" id="info"></div>
+                <div class="line"></div>
+            </item>
+        </recycle>
+    </group>
+    <group class="r_111x82" style="width: 1280px;height: 82px;top:516px;">
+        <item class="item" style="left: 72px;">
+            <div class="focus"><img src="../../images/home/home_fragment_0/recommend_column_1_focus.png"></div>
+            <div class="pic"><img src="../../images/home/home_fragment_0/recommend_column_1.png"></div>
+        </item>
+        <item class="item" style="left: 187px;">
+            <div class="focus"><img src="../../images/home/home_fragment_0/recommend_column_2_focus.png"></div>
+            <div class="pic"><img src="../../images/home/home_fragment_0/recommend_column_2.png"></div>
+        </item>
+        <item class="item" style="left: 302px;">
+            <div class="focus"><img src="../../images/home/home_fragment_0/recommend_column_3_focus.png"></div>
+            <div class="pic"><img src="../../images/home/home_fragment_0/recommend_column_3.png"></div>
+        </item>
+        <item class="item" style="left: 417px;">
+            <div class="focus"><img src="../../images/home/home_fragment_0/recommend_column_4_focus.png"></div>
+            <div class="pic"><img src="../../images/home/home_fragment_0/recommend_column_4.png"></div>
+        </item>
+        <item class="item" style="left: 522px;">
+            <div class="focus"><img src="../../images/home/home_fragment_0/recommend_column_5_focus.png"></div>
+            <div class="pic"><img src="../../images/home/home_fragment_0/recommend_column_5.png"></div>
+        </item>
+        <item class="item" style="left: 642px;">
+            <div class="focus"><img src="../../images/home/home_fragment_0/recommend_column_6_focus.png"></div>
+            <div class="pic"><img src="../../images/home/home_fragment_0/recommend_column_6.png"></div>
+        </item>
+        <item class="item" style="left: 757px;">
+            <div class="focus"><img src="../../images/home/home_fragment_0/recommend_column_7_focus.png"></div>
+            <div class="pic"><img src="../../images/home/home_fragment_0/recommend_column_7.png"></div>
+        </item>
+        <item class="item" style="left: 872px;">
+            <div class="focus"><img src="../../images/home/home_fragment_0/recommend_column_8_focus.png"></div>
+            <div class="pic"><img src="../../images/home/home_fragment_0/recommend_column_8.png"></div>
+        </item>
+        <item class="item" style="left: 987px;">
+            <div class="focus"><img src="../../images/home/home_fragment_0/recommend_column_9_hangzhou_focus.png"></div>
+            <div class="pic"><img src="../../images/home/home_fragment_0/recommend_column_9_hangzhou.png"></div>
+        </item>
+        <item class="item" style="left: 1102px;">
+            <div class="focus"><img src="../../images/home/home_fragment_0/recommend_column_9_local_focus.png"></div>
+            <div class="pic"><img src="../../images/home/home_fragment_0/recommend_column_9_local.png"></div>
+        </item>
+    </group>
 
-        <div class="r_271x152" style="left: 337px;top:336px;">
-            <div class="item" view-type="view-item">
-                <div class="focus"><img></div>
-                <div class="pic"><img></div>
-            </div>
-        </div>
-
-        <div class="r_271x152" style="left: 628px;top:336px;">
-            <div class="item" view-type="view-item">
-                <div class="focus"><img></div>
-                <div class="pic"><img></div>
-            </div>
-        </div>
-
-        <div class="r_271x152" style="left: 919px;top:336px;">
-            <div class="item" view-type="view-item">
-                <div class="focus"><img></div>
-                <div class="pic"><img></div>
-            </div>
-        </div>
-    </div>
-    <div class="horizontal_scroll_0_1" view-type="view-group">
-        <div class="r_1148x148" style="left: 44px;top:25px;">
-            <div class="item" view-type="view-item">
-                <div class="focus"><img></div>
-                <div class="pic"><img></div>
-            </div>
-        </div>
-
-        <div class="r_271x316" style="left: 44px;top:193px;">
-            <div class="item" view-type="view-item">
-                <div class="focus"><img></div>
-                <div class="pic"><img></div>
-            </div>
-        </div>
-
-        <div class="r_565x316" style="left: 336px;top:193px;">
-            <div class="item" view-type="view-item">
-                <div class="focus"><img></div>
-                <div class="pic"><img></div>
-            </div>
-        </div>
-
-        <div class="r_271x152" style="left: 919px;top:193px;">
-            <div class="item" view-type="view-item">
-                <div class="focus"><img></div>
-                <div class="pic"><img></div>
-            </div>
-        </div>
-
-        <div class="r_271x152" style="left: 919px;top:358px;">
-            <div class="item" view-type="view-item">
-                <div class="focus"><img></div>
-                <div class="pic"><img></div>
-            </div>
-        </div>
-    </div>
-    <div class="horizontal_scroll_0_2" view-type="view-group">
-        <div class="r_174x174" style="left: 44px;top:22px;">
-            <div class="item" view-type="view-item">
-                <div class="focus"><img></div>
-                <div class="pic"><img></div>
-            </div>
-        </div>
-
-        <div class="r_174x174" style="left: 240px;top:22px;">
-            <div class="item" view-type="view-item">
-                <div class="focus"><img></div>
-                <div class="pic"><img></div>
-            </div>
-        </div>
-
-        <div class="r_174x174" style="left: 434px;top:22px;">
-            <div class="item" view-type="view-item">
-                <div class="focus"><img></div>
-                <div class="pic"><img view-id="horizontal_scroll_0_2_2_pic"></div>
-            </div>
-        </div>
-
-        <div class="r_174x174" style="left: 628px;top:22px;">
-            <div class="item" view-type="view-item">
-                <div class="focus"><img></div>
-                <div class="pic"><img></div>
-            </div>
-        </div>
-
-        <div class="r_174x174" style="left: 821px;top:22px;">
-            <div class="item" view-type="view-item">
-                <div class="focus"><img></div>
-                <div class="pic"><img></div>
-            </div>
-        </div>
-
-        <div class="r_174x174" style="left: 1017px;top:22px;">
-            <div class="item" view-type="view-item">
-                <div class="focus"><img></div>
-                <div class="pic"><img view-id="horizontal_scroll_0_2_5_pic"></div>
-            </div>
-        </div>
-
-        <div class="r_174x228" style="left: 44px;top:257px;">
-            <div class="item" view-type="view-item">
-                <div class="focus"><img></div>
-                <div class="pic"><img view-id="horizontal_scroll_0_2_6_pic"></div>
-            </div>
-        </div>
-
-        <div class="r_174x228" style="left: 239px;top:257px;">
-            <div class="item" view-type="view-item">
-                <div class="focus"><img></div>
-                <div class="pic"><img view-id="horizontal_scroll_0_2_7_pic"></div>
-            </div>
-        </div>
-
-        <div class="r_174x228" style="left: 433px;top:257px;">
-            <div class="item" view-type="view-item">
-                <div class="focus"><img></div>
-                <div class="pic"><img view-id="horizontal_scroll_0_2_8_pic"></div>
-            </div>
-        </div>
-
-        <div class="r_174x228" style="left: 628px;top:257px;">
-            <div class="item" view-type="view-item">
-                <div class="focus"><img></div>
-                <div class="pic"><img view-id="horizontal_scroll_0_2_9_pic"></div>
-            </div>
-        </div>
-
-        <div class="r_174x228" style="left: 822px;top:257px;">
-            <div class="item" view-type="view-item">
-                <div class="focus"><img></div>
-                <div class="pic"><img view-id="horizontal_scroll_0_2_10_pic"></div>
-            </div>
-        </div>
-
-        <div class="r_174x228" style="left: 1017px;top:257px;">
-            <div class="item" view-type="view-item" view-id="horizontal_scroll_0_2_11">
-                <div class="focus"><img></div>
-                <div class="pic"><img src="../../images/home/home_fragment_0/poster.png" view-id="horizontal_scroll_0_2_11_pic"></div>
-            </div>
-        </div>
-
-        <div class="r_123x33" style="left: 505px;top:570px;">
-            <div class="item" view-type="view-item">
-                <div class="focus"><img></div>
-                <div class="pic"><img view-id="horizontal_scroll_0_2_12_pic"></div>
-            </div>
-        </div>
-
-        <div class="r_123x33" style="left: 650px;top:570px;">
-            <div class="item" view-type="view-item">
-                <div class="focus"><img></div>
-                <div class="pic"><img></div>
-            </div>
-        </div>
+    <div class="r_1136x320" style="left: 53px;top:585px;">
+        <item class="item" view-left="none" view-right="none">
+            <div class="focus"><img src="../../images/focus/1136x320.png"/></div>
+<!--            <div class="pic"><img src="../../images/home/home_fragment_0/r_1136x320.png"/></div>-->
+            <div class="pic"><img/></div>
+        </item>
     </div>
 </template>

@@ -19,16 +19,9 @@ export default class MyApplication extends Application {
 
     onLaunch(urlParam) {
         console.log("onLaunch，地址栏参数：", urlParam);
-        var firstPage = null;
-        var param = {data:"enter"};//将地址栏参数中与firstPage相关的参数填到param，会在firstPage中获取到
-        switch (urlParam.pageKey) {
-            case "home":
-                firstPage = new HomePage();
-                break;
-            default:
-                firstPage = new HomePage();
-                break;
-        }
+        var firstPage = new HomePage();
+        //将地址栏参数中与firstPage相关的参数填到param，会在firstPage中获取到
+        var param = urlParam.data;
         return {firstPage: firstPage, param: param};
     }
 
@@ -47,16 +40,11 @@ export default class MyApplication extends Application {
 
     exitUrl() {
         var url = "";
-        if (false) {
-            url = "http://www.baidu.com";
-        } else {
-            url = "";
-        }
         return url;
     }
 
     getPlayerInstance() {
-        var player = {};
+        var player = null;
         try {
             player = new IptvPlayer();
         } catch (e) {
