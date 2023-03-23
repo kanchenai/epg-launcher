@@ -147,6 +147,50 @@
     height: 232px;
 }
 
+.r_176x272,
+.r_176x272 .item{
+    width: 214px;
+    height: 310px;
+}
+
+.r_176x272 .focus,
+.r_176x272 .focus img{
+    width: 214px;
+    height: 310px;
+}
+
+.r_176x272 .pic,
+.r_176x272 .pic img{
+    width: 176px;
+    height: 232px;
+}
+
+.r_176x272 .pic img{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.r_176x272 .text_bg{
+    width: 176px;
+    height: 40px;
+    left: 19px;
+    top: 251px;
+    background: white;
+}
+
+.r_176x272 .text{
+    width: 166px;
+    height: 40px;
+    left: 24px;
+    top: 251px;
+    color: #454545;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+}
+
 .title{
     width: 500px;
     height: 22px;
