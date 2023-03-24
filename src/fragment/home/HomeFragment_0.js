@@ -1,9 +1,9 @@
-import Fragment from "../../core/frame/view/group/Fragment";
+import Fragment from "@core/frame/view/group/Fragment";
 
-import html from "../html/fragment/home/home_fragment_0.html"
-import {Adapter} from "../../core/frame/view/group/RecycleView";
+import html from "@html/fragment/home/home_fragment_0.html"
+import {Adapter} from "@core/frame/view/group/RecycleView";
 
-export default class HomeFragment_0 extends Fragment{
+export default class HomeFragment_0 extends Fragment {
     onCreate() {
         this.html = html;
         this.initView();
@@ -11,14 +11,15 @@ export default class HomeFragment_0 extends Fragment{
         this.initUtil();
     }
 
-    initView(){
+    initView() {
         this.first_big = this.findViewById("first_big");
         this.like = this.findViewById("like");
         this.like.adapter = new LikeAdapter();
 
     }
 
-    setView(){}
+    setView() {
+    }
 
     initUtil() {
         this.like.data = [
@@ -29,6 +30,7 @@ export default class HomeFragment_0 extends Fragment{
         ]
 
     }
+
     onScrollStartListener(scrollView, x, y) {
     }
 
@@ -44,16 +46,22 @@ export default class HomeFragment_0 extends Fragment{
     onStop() {
     }
 
-    onClickListener(view){
-        switch (view.id){
+    onClickListener(view) {
+        switch (view.id) {
             case "back_top":
                 this.first_big.requestFocus();
+                break;
+            default:
+                var url = encodeURIComponent(location.href);
+                var outsideUrl = "http://kanchenai.gitee.io/aiqiyi_page?pageKey=detail&backUrl=" + url;
+                console.log("outsideUrl", outsideUrl)
+                this.page.application.gotoOutside(outsideUrl);
                 break;
         }
     }
 }
 
-class LikeAdapter extends Adapter{
+class LikeAdapter extends Adapter {
     bindHolder(holder, data) {
         var text = holder.findViewById("text");
         var info = holder.findEleById("info")

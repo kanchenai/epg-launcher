@@ -1,6 +1,6 @@
-import Fragment from "../../core/frame/view/group/Fragment";
+import Fragment from "@core/frame/view/group/Fragment";
 
-import html from "../html/fragment/home/home_fragment_3.html"
+import html from "@html/fragment/home/home_fragment_3.html"
 
 export default class HomeFragment_3 extends Fragment{
     onCreate() {

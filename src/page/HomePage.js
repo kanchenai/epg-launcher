@@ -1,16 +1,17 @@
 import Page from "@core/frame/page/Page";
 
-import HomeFragment_0 from "../fragment/HomeFragment_0";
-import HomeFragment_1 from "../fragment/HomeFragment_1";
-import HomeFragment_2 from "../fragment/HomeFragment_2";
-import HomeFragment_3 from "../fragment/HomeFragment_3";
-import HomeFragment_4 from "../fragment/HomeFragment_4";
-import HomeFragment_5 from "../fragment/HomeFragment_5";
+import HomeFragment_0 from "@fragment/home/HomeFragment_0";
+import HomeFragment_1 from "@fragment/home/HomeFragment_1";
+import HomeFragment_2 from "@fragment/home/HomeFragment_2";
+import HomeFragment_3 from "@fragment/home/HomeFragment_3";
+import HomeFragment_4 from "@fragment/home/HomeFragment_4";
+import HomeFragment_5 from "@fragment/home/HomeFragment_5";
 
 import html from "@html/home.html"
 import ConfirmDialog from "@src/dialog/ConfirmDialog";
 import utils from "@src/util/utils";
 import {Adapter} from "../../core/frame/view/group/RecycleView";
+import State from "@core/frame/util/State";
 
 export default class HomePage extends Page {
     constructor() {
@@ -31,8 +32,8 @@ export default class HomePage extends Page {
 
         this.frame_view = this.findViewById("frame_view");
         this.frame_view.addFragmentList([
-            new HomeFragment_0(this.viewManager),
             new HomeFragment_1(this.viewManager),
+            new HomeFragment_0(this.viewManager),
             new HomeFragment_2(this.viewManager),
             new HomeFragment_3(this.viewManager),
             new HomeFragment_4(this.viewManager),
@@ -41,6 +42,8 @@ export default class HomePage extends Page {
         this.navigation = this.findViewById("navigation");
         this.navigation.adapter = new NavAdapter();
         this.dialog = new ConfirmDialog(this.viewManager);
+
+
     }
 
     setView() {
@@ -49,9 +52,16 @@ export default class HomePage extends Page {
 
     initUtil() {
         this.navigation.data = [
-            "推荐", "直播", "电影", "电视剧", "少儿",
+            "直播", "推荐", "电影", "电视剧", "少儿",
             "体育", "新闻", "记录", "中国蓝", "娱乐",
-            "教育", "电竞", "音乐", "游戏", "家庭"]
+            "教育", "电竞", "音乐", "游戏", "家庭"];
+        var that = this;
+        setTimeout(function () {
+            that.frame_view.animation = false;
+            that.navigation.focusByIndex(1);//需要在page运行时，这个方法才生效，所以需要setTimeout
+            that.frame_view.animation = State.ScrollAnimation;
+        }, 0);
+
     }
 
     bgToVideoBg(playInfo) {
