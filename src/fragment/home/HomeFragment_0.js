@@ -53,7 +53,7 @@ export default class HomeFragment_0 extends Fragment {
                 break;
             default:
                 var url = encodeURIComponent(location.href);
-                var outsideUrl = "http://kanchenai.gitee.io/aiqiyi_page?pageKey=detail&backUrl=" + url;
+                var outsideUrl = "http://kanchenai.gitee.io/aiqiyi_page?backUrl=" + url;
                 console.log("outsideUrl", outsideUrl)
                 this.page.application.gotoOutside(outsideUrl);
                 break;
