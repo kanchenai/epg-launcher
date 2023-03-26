@@ -37,7 +37,15 @@ export default class HomePage extends Page {
             new HomeFragment_2(this.viewManager),
             new HomeFragment_3(this.viewManager),
             new HomeFragment_4(this.viewManager),
-            new HomeFragment_5(this.viewManager)
+            new HomeFragment_5(this.viewManager),
+            new HomeFragment_1(this.viewManager),
+            new HomeFragment_0(this.viewManager),
+            new HomeFragment_2(this.viewManager),
+            new HomeFragment_3(this.viewManager),
+            new HomeFragment_4(this.viewManager),
+            new HomeFragment_5(this.viewManager),
+            new HomeFragment_1(this.viewManager),
+            new HomeFragment_0(this.viewManager)
         ]);
         this.navigation = this.findViewById("navigation");
         this.navigation.adapter = new NavAdapter();
