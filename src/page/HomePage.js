@@ -70,7 +70,7 @@ export default class HomePage extends Page {
         this.navigation.data = [
             "直播", "推荐", "电影", "电视剧", "少儿",
             "体育", "新闻", "记录", "中国蓝", "娱乐",
-            "教育", "电竞", "音乐", "游戏", "家庭"];
+            "教育", "电竞", "音乐", "游戏"];
         var that = this;
         setTimeout(function () {
             that.frame_view.animation = false;
