@@ -1,8 +1,8 @@
 import Fragment from "@core/frame/view/group/Fragment";
 
-import html from "@html/fragment/home/home_fragment_5.html"
+import html from "@html/fragment/home/home_fragment_6.html"
 
-export default class HomeFragment_5 extends Fragment{
+export default class HomeFragment_6 extends Fragment{
     onCreate() {
         this.html = html;
 

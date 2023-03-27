@@ -1,17 +1,25 @@
 import Page from "@core/frame/page/Page";
 
+import html from "@html/home.html"
+import ConfirmDialog from "@src/dialog/ConfirmDialog";
+import utils from "@src/util/utils";
+import {Adapter} from "../../core/frame/view/group/RecycleView";
+import State from "@core/frame/util/State";
+
 import HomeFragment_0 from "@fragment/home/HomeFragment_0";
 import HomeFragment_1 from "@fragment/home/HomeFragment_1";
 import HomeFragment_2 from "@fragment/home/HomeFragment_2";
 import HomeFragment_3 from "@fragment/home/HomeFragment_3";
 import HomeFragment_4 from "@fragment/home/HomeFragment_4";
 import HomeFragment_5 from "@fragment/home/HomeFragment_5";
-
-import html from "@html/home.html"
-import ConfirmDialog from "@src/dialog/ConfirmDialog";
-import utils from "@src/util/utils";
-import {Adapter} from "../../core/frame/view/group/RecycleView";
-import State from "@core/frame/util/State";
+import HomeFragment_6 from "@fragment/home/HomeFragment_6";
+import HomeFragment_7 from "@fragment/home/HomeFragment_7";
+import HomeFragment_8 from "@fragment/home/HomeFragment_8";
+import HomeFragment_9 from "@fragment/home/HomeFragment_9";
+import HomeFragment_10 from "@fragment/home/HomeFragment_10";
+import HomeFragment_11 from "@fragment/home/HomeFragment_11";
+import HomeFragment_12 from "@fragment/home/HomeFragment_12";
+import HomeFragment_13 from "@fragment/home/HomeFragment_13";
 
 export default class HomePage extends Page {
     constructor() {
@@ -38,14 +46,14 @@ export default class HomePage extends Page {
             new HomeFragment_3(this.viewManager),
             new HomeFragment_4(this.viewManager),
             new HomeFragment_5(this.viewManager),
-            new HomeFragment_1(this.viewManager),
-            new HomeFragment_0(this.viewManager),
-            new HomeFragment_2(this.viewManager),
-            new HomeFragment_3(this.viewManager),
-            new HomeFragment_4(this.viewManager),
-            new HomeFragment_5(this.viewManager),
-            new HomeFragment_1(this.viewManager),
-            new HomeFragment_0(this.viewManager)
+            new HomeFragment_6(this.viewManager),
+            new HomeFragment_7(this.viewManager),
+            new HomeFragment_8(this.viewManager),
+            new HomeFragment_9(this.viewManager),
+            new HomeFragment_10(this.viewManager),
+            new HomeFragment_11(this.viewManager),
+            new HomeFragment_12(this.viewManager),
+            new HomeFragment_13(this.viewManager)
         ]);
         this.navigation = this.findViewById("navigation");
         this.navigation.adapter = new NavAdapter();
