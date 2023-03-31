@@ -29,6 +29,10 @@
     color: #434343;
 }
 
+.dark .text{
+    color: #acacad;
+}
+
 .navigation .item_focus .text{
     color: white;
 }

@@ -129,6 +129,12 @@ var onNavFocusChangeListener = function (view, hasFocus) {
     var bg = require("../images/home/home_fragment_" + index + "/bg.png");
 
     this.bg.src = bg;
+
+    if(index == 5 || index == 4){
+        view.fatherView.fatherView.ele.className = "navigation dark";
+    }else{
+        view.fatherView.fatherView.ele.className = "navigation";
+    }
 }
 
 class NavAdapter extends Adapter {
