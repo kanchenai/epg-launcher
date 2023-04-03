@@ -42,6 +42,14 @@ export default class HomeFragment_1 extends Fragment{
 
     onDestroy() {
     }
+
+    onClickListener(view){
+        var url = encodeURIComponent(location.href);
+        // var outsideUrl = " http://192.168.207.11:8082?backUrl=" + url;
+        var outsideUrl = "http://kanchenai.gitee.io/live-page?backUrl=" + url;
+        console.log("outsideUrl", outsideUrl)
+        this.page.application.gotoOutside(outsideUrl);
+    }
 }
 
 class ChannelNavAdapter extends Adapter{

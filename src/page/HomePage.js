@@ -58,8 +58,6 @@ export default class HomePage extends Page {
         this.navigation = this.findViewById("navigation");
         this.navigation.adapter = new NavAdapter();
         this.dialog = new ConfirmDialog(this.viewManager);
-
-
     }
 
     setView() {
