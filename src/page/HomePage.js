@@ -22,11 +22,6 @@ import HomeFragment_12 from "@fragment/home/HomeFragment_12";
 import HomeFragment_13 from "@fragment/home/HomeFragment_13";
 
 export default class HomePage extends Page {
-    constructor() {
-        super();
-        this.pageName = "HomePage";
-    }
-
     onCreate(param) {
         console.log(this.pageName, "onCreate", "传入参数", param);
         this.html = html;
