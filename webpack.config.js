@@ -39,14 +39,14 @@ module.exports = {
                 include: [path.resolve(__dirname, 'src/html/'),path.resolve(__dirname, 'core/frame/view/html/')],
                 use: ["html-withimg-loader", "view-html-loader"],
             },
-            // {
-            //     test: [/\.html$/],
-            //     include: path.resolve(__dirname,'src/test/'),
-            //     use:["html-loader","view-html-loader"]
-            // },
+            {
+                test: [/\.html$/],
+                include: [path.resolve(__dirname, 'public/')],
+                use: ["html-withimg-loader"],
+            },
             {
                 test: [/\.png$/, /\.jpg$/, /\.jpeg$/, /\.gif$/],
-                include: path.resolve(__dirname, 'src/images-js/'),//exclude：可以显示在html中的图片；include:不能显示html的图片,可以使用import导入
+                include: [path.resolve(__dirname, 'src/html/'),path.resolve(__dirname, 'src/images-js/')],//exclude：可以显示在html中的图片；include:不能显示html的图片,可以使用import导入
                 use: {
                     loader: "file-loader",
                     options: {

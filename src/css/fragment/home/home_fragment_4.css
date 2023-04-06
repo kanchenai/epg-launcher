@@ -101,7 +101,7 @@
 .r_90x90,
 .r_90x90 .item{
     width: 128px;
-    height: 128px;
+    height: 144px;
 }
 
 .r_90x90 .focus,
@@ -110,20 +110,24 @@
     height: 128px;
 }
 
+.r_90x90 .focus{
+    top: 16px;
+}
+
 .r_90x90 .pic,
 .r_90x90 .pic img{
     width: 128px;
-    height: 128px;
+    height: 136px;
 }
 
 .r_90x90 .pic{
     left: 0px;
-    top: 0px;
+    top: 8px;
 }
 
 .second_screen{
     width: 1280px;
-    height: 130px;
+    height: 150px;
     left: 0px;
     top: 467px;
     overflow: hidden;
