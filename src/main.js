@@ -15,6 +15,7 @@ window.onload = function () {
     // var application = new MyApplication("app");
     // application.launch();
 
-    console.log(new Date().getTime() - start)
+    var mode = process.env.NODE_ENV || "production";//获取当前的模式
+    console.log(mode, new Date().getTime() - start)
 }
 
